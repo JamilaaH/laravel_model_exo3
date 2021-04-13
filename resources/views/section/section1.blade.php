@@ -1,8 +1,8 @@
 <section>
-    <h1>tous les membres</h1>
-    <ul>
+    <h1>Tous les membres : {{$membres->count()}} </h1>
+    <div class="row">
         @foreach ($membres as $item)
-            <li>{{$item->nom}} / {{$item->age}} ans </li>
+            <div class="col-2 {{$item->genre == 'Homme' ? 'text-primary' : 'text-danger' }}">{{$item->nom}} / {{$item->age}} ans </div>
         @endforeach
-    </ul>
+    </div>
 </section>

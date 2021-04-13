@@ -1,10 +1,10 @@
 <section>
     <h1>Les hommes en condition</h1>
-    <ul>
+    <div class="row">
         @foreach ($hommesConditions as $item)
-            <li>{{$item->nom}} / {{$item->age}} ans</li>
+            <div class="col-2">{{$item->nom}} / {{$item->age}} ans</div>
         @endforeach
 
-    </ul>
+    </div>
 
 </section>
